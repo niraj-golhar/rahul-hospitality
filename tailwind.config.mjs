@@ -16,6 +16,10 @@ export default {
         Outfit: ["Outfit", "sans-serif"],
         Ovo: ["Ovo", "sans-serif"],
       },
+      boxShadow: {
+        'black': '4px 4px 0px 0px #000000',
+        'white': '4px 4px 0px 0px #ffffff'
+      }
     },
   },
   plugins: [],
