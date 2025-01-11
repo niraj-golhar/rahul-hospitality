@@ -1,9 +1,13 @@
-import Image from "next/image";
-
+"use client"
+import Navbar from "./components/Navbar";
+import Header from "./components/Header";
+import About from "./components/About";
 export default function Home() {
   return (
     <div>
-      <Image src="/logo.png" alt="Rahul Hospitality" width={100} height={100} />
+      <Navbar />
+      <Header />
+      <About />
     </div>
   );
 }
