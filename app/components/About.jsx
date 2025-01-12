@@ -29,15 +29,6 @@ const About = () => {
                             </li>
                         ))}
                     </ul>
-                    <h4> Tools we use </h4>
-                        <ul>
-                            {toolsData.map(({tool , title}, index) => (
-                                <li key={index}  >
-                                    <Image src={tool} alt={title} className='w-7'></Image>
-                                    <p>{title}</p>
-                                </li>
-                            ))}
-                        </ul>
                 </div>
             </div>
         </div>
