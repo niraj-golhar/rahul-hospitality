@@ -2,13 +2,13 @@ import { assets } from '../../assets/assets'
 import Image from 'next/image'
 import React from 'react'
 
-const Footer = () => {
+const Footer = ({ isDark }) => {
     return (
         <div className='mt-20'>
             <div className="text-center">
-                <Image src={assets.logo} alt='Logo' className='w-36 mx-auto mb-2' />
+                <Image src={ isDark ? assets.logo_dark : assets.logo} alt='Logo' className='w-36 mx-auto mb-2' />
                 <div className='w-max mx-auto flex gap-2 justify-center items-center'>
-                    <Image src={assets.mail_icon} alt='Logo' className='' />
+                    <Image src={ isDark ? assets.mail_icon_dark : assets.mail_icon} alt='Logo' className='w-4' />
                     info@rahulhospitality.com
                 </div>
             </div>

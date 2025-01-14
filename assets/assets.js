@@ -36,6 +36,9 @@ import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import instafeel from './instalfeel.jpg';
+import rahul_hospitality from './rahul-hospitality.png';
+import rahul_hospitality1 from './rahul-hospitalit1.svg';
+import rahul_hospitality2 from './rh-resized.svg';
 
 export const assets = {
     user_image,
@@ -75,7 +78,10 @@ export const assets = {
     send_icon,
     right_arrow_bold,
     right_arrow_bold_dark,
-    instafeel
+    instafeel,
+    rahul_hospitality,
+    rahul_hospitality1,
+    rahul_hospitality2,
 };
 
 export const workData = [
