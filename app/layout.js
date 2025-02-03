@@ -1,4 +1,4 @@
-import { Outfit , Ovo } from "next/font/google";
+import { Outfit, Ovo } from "next/font/google";
 import "./globals.css";
 
 const outfit = Outfit({
@@ -10,8 +10,8 @@ const ovo = Ovo({
 });
 
 export const metadata = {
-  title: "Portfolio | Rahul Hospitality",
-  description: "Portfolio of Rahul Hospitality",
+  title: "Rahul Hospitality",
+  description: "Rahul Hospitality - Hotels, Resorts, Hostels and Restaurants",
 };
 
 export default function RootLayout({ children }) {

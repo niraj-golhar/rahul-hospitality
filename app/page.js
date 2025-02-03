@@ -35,8 +35,8 @@ export default function Home() {
       <Navbar isDark={isDark} setIsDark={setIsDark}/>
       <Header isDark={isDark} />
       <About isDark={isDark} />
-      <Services isDark={isDark} />
       <Work isDark={isDark} />
+      <Services isDark={isDark} />
       <Contact isDark={isDark} />
       <Footer isDark={isDark} />
     </div>

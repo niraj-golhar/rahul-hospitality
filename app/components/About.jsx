@@ -10,7 +10,7 @@ const About = ({ isDark }) => {
             initial={{opacity: 0}}
             whileInView={{opacity: 1}}
             transition={{ duration: 1 }}
-            id='about' className='w-full px-[12%] py-10 scroll-mt-20'>
+            id='about' className='w-full pb-[12%] pt-[14%] py-10 scroll-mt-20'>
             <motion.h4
                 initial={{y:-20, opacity: 0}}
                 whileInView={{y:0, opacity: 1}}
@@ -31,17 +31,16 @@ const About = ({ isDark }) => {
                     initial={{scale: 0.9, opacity: 0}}
                     whileInView={{scale: 1, opacity: 1}}
                     transition={{ duration: 0.6}}
-
-                    className='w-2/6'
+                    className='flex flex-1 justify-center'
                 >
-                    <Image src={assets.rahul_hospitality1} alt="logo" className='w-full rounded-3xl'></Image>
+                    <Image src={assets.rahul_hospitality} alt="logo" className='w-[40%]'></Image>
                 </motion.div>
                 <motion.div
                     initial={{ opacity: 0}}
                     whileInView={{ opacity: 1}}
                     transition={{ duration: 0.6 , delay: 0.8 }}
                     className='flex-1'>
-                    <p className='mb-10 max-w-2xl mx-auto font-Ovo'>
+                    <p className='mb-10 mx-5 max-w-2xl font-Ovo'>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
@@ -51,7 +50,7 @@ const About = ({ isDark }) => {
                         initial={{ opacity: 0}}
                         whileInView={{ opacity: 1}}
                         transition={{ duration: 0.1 , delay: 1 }}
-                    className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl'>
+                        className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl !m-5'>
                         {infoList.map(({ icon, iconDark, title, description }, index) => (
                             <motion.li 
                                 whileInView={{ scale: 1.05}}
