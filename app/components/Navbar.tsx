@@ -6,12 +6,12 @@ const Navbar = ({ isDark, setIsDark }: { isDark: boolean, setIsDark: (isDark: bo
     const [isScrollY, setIsScrollY] = useState(false);
     const sideMenuRef = useRef(null);
 
-    const openSideMenu = () => {
-        sideMenuRef.current.style.transform = 'translateX(-16rem)';
-    }
-
     const closeSideMenu = () => {
         sideMenuRef.current.style.transform = 'translateX(16rem)';
+    }
+
+    const openSideMenu = () => {
+        sideMenuRef.current.style.transform = 'translateX(-16rem)';
     }
 
     useEffect(() => {
@@ -79,19 +79,19 @@ const Navbar = ({ isDark, setIsDark }: { isDark: boolean, setIsDark: (isDark: bo
                     <div className='absolute right-6 top-6' onClick={closeSideMenu}>
                         <Image src={isDark ? assets.close_white : assets.close_black} alt="close" width={100} height={100} className='w-6 cursor-pointer'></Image>
                     </div>
-                    <li onClick={openSideMenu}>
+                    <li onClick={closeSideMenu}>
                         <a href="#top"> Home </a>
                     </li>
-                    <li onClick={openSideMenu}>
+                    <li onClick={closeSideMenu}>
                         <a href="#about"> About us </a>
                     </li>
-                    <li onClick={openSideMenu}>
+                    <li onClick={closeSideMenu}>
                         <a href="#services"> Services </a>
                     </li>
-                    <li onClick={openSideMenu}>
+                    <li onClick={closeSideMenu}>
                         <a href="#mywork"> My Work </a>
                     </li>
-                    <li onClick={openSideMenu}>
+                    <li onClick={closeSideMenu}>
                         <a href="#contact"> Contact us </a>
                     </li>
                 </ul>
