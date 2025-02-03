@@ -36,9 +36,11 @@ import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import instafeel from './instalfeel.jpg';
-import rahul_hospitality from './rahul-hospitality.png';
-import rahul_hospitality1 from './rahul-hospitalit1.svg';
-import rahul_hospitality2 from './rh-resized.svg';
+import rahul_hospitality from './rahul-hospitality.svg';
+import coming_soon from './coming-soon.jpg';
+import instafeel_night from './instafeel-night.jpg'; 
+import rahul_seaman_hostel_palm_beach from './rahul-seaman-hostel-palm-beach.avif';
+import wedding_hall_instafeel from './wedding-hall-instafeel.jpg';
 
 export const assets = {
     user_image,
@@ -80,30 +82,32 @@ export const assets = {
     right_arrow_bold_dark,
     instafeel,
     rahul_hospitality,
-    rahul_hospitality1,
-    rahul_hospitality2,
+    coming_soon,
+    instafeel_night,
+    rahul_seaman_hostel_palm_beach,
+    wedding_hall_instafeel,
 };
 
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
-        bgImage: '/work-1.png',
+        title: 'Insta Feel Hotel',
+        description: 'Cousine and Restaurant',
+        bgImage: '/instafeel-night.jpg',
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
-        bgImage: '/work-2.png',
+        title: 'Hostel And Dormitory',
+        description: 'Stay and Relax',
+        bgImage: '/rahul-seaman-hostel-palm-beach.avif',
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
-        bgImage: '/work-3.png',
+        title: 'Reception and Wedding Hall',
+        description: 'Luxury wedding hall',
+        bgImage: '/wedding-hall-instafeel.jpg',
     },
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
-        bgImage: '/work-4.png',
+        title: 'Cooming Soon',
+        description: 'More group projects comming soon',
+        bgImage: '/coming-soon.jpg',
     },
 ]
 

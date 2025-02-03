@@ -16,16 +16,16 @@ const Navbar = ({ isDark, setIsDark }: { isDark: boolean, setIsDark: (isDark: bo
 
     useEffect(() => {
         window.addEventListener('scroll', () => {
-            if(scrollY > 50) {
+            if (scrollY > 50) {
                 setIsScrollY(true);
-            }else{
+            } else {
                 setIsScrollY(false);
             }
         });
     }, []);
 
     return (
-        <>  
+        <>
             <div className='fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden'>
                 <Image src={assets.header_bg_color} className='w-full blur-md' alt="bf"></Image>
             </div>
@@ -34,67 +34,67 @@ const Navbar = ({ isDark, setIsDark }: { isDark: boolean, setIsDark: (isDark: bo
                 ${isDark ? 'text-white' : 'text-black'}
             `}>
                 <a href="#top">
-                <h1 className="text-black font-bold text-2xl cursor-pointer dark:text-white">
-                RAHUL  HOSPITALITY<span className="text-[#ff0000] text-4xl">.</span>
-  </h1>
+                    <h1 className="text-black font-bold text-2xl cursor-pointer dark:text-white">
+                        RAHUL  HOSPITALITY<span className="text-[#ff0000] text-4xl">.</span>
+                    </h1>
                 </a>
 
-            <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 
+                <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 
             ${isScrollY ? "" : "bg-white shadow-sm bg-opacity-50 dark:border dark:border-white/50 dark:bg-transparent"}`}>
-                <li>
-                    <a href="#top"> Home </a>
-                </li>
-                <li>
-                    <a href="#about"> About us </a>
-                </li>
-                <li>
-                    <a href="#services"> Services </a>
-                </li>
-                <li>
-                    <a href="#mywork"> My Work </a>
-                </li>
-                <li>
-                    <a href="#contact"> Contact us </a>
-                </li>
-            </ul>
+                    <li>
+                        <a href="#top"> Home </a>
+                    </li>
+                    <li>
+                        <a href="#about"> About us </a>
+                    </li>
+                    <li>
+                        <a href="#services"> Services </a>
+                    </li>
+                    <li>
+                        <a href="#mywork"> My Work </a>
+                    </li>
+                    <li>
+                        <a href="#contact"> Contact us </a>
+                    </li>
+                </ul>
 
-            <div className='flex items-center gap-4'>
-                <button>
-                    <Image src={isDark ? assets.sun_icon : assets.moon_icon} onClick={() => setIsDark(!isDark)} alt="toggle-mode" width={100} height={100} className='w-6'></Image>
-                </button>
-                <a href="#contact" className='hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 
+                <div className='flex items-center gap-4'>
+                    <button>
+                        <Image src={isDark ? assets.sun_icon : assets.moon_icon} onClick={() => setIsDark(!isDark)} alt="toggle-mode" width={100} height={100} className='w-6'></Image>
+                    </button>
+                    <a href="#contact" className='hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 
                 dark:border-white/50 dark:text-white
                 '>
-                    Contact 
-                    <Image src={ isDark ? assets.arrow_icon_dark : assets.arrow_icon} alt="arrow" width={100} height={100} className='w-3' ></Image>
-                </a>
-                <button className='block lg:hidden md:hidden ml-4' onClick={openSideMenu}>
-                    <Image src={ isDark ? assets.menu_white : assets.menu_black} alt="menu" width={100} height={100} className='w-6'></Image>
-                </button> 
-            </div>
-
-            {/* Mobile Menu */}
-            <ul ref={sideMenuRef} className='flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500
-            dark:bg-darkHover dark:text-white'>
-                <div className='absolute right-6 top-6' onClick={closeSideMenu}>
-                    <Image src={ isDark ? assets.close_white : assets.close_black} alt="close" width={100} height={100} className='w-6 cursor-pointer'></Image> 
+                        Contact
+                        <Image src={isDark ? assets.arrow_icon_dark : assets.arrow_icon} alt="arrow" width={100} height={100} className='w-3' ></Image>
+                    </a>
+                    <button className='block lg:hidden md:hidden ml-4' onClick={openSideMenu}>
+                        <Image src={isDark ? assets.menu_white : assets.menu_black} alt="menu" width={100} height={100} className='w-6'></Image>
+                    </button>
                 </div>
-            <li onClick={openSideMenu}>
-                    <a href="#top"> Home </a>
-                </li>
-                <li onClick={openSideMenu}>
-                    <a href="#about"> About us </a>
-                </li>
-                <li onClick={openSideMenu}>
-                    <a href="#services"> Services </a>
-                </li>
-                <li onClick={openSideMenu}>
-                    <a href="#mywork"> My Work </a>
-                </li>
-                <li onClick={openSideMenu}>
-                    <a href="#contact"> Contact us </a>
-                </li>
-            </ul>
+
+                {/* Mobile Menu */}
+                <ul ref={sideMenuRef} className='flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500
+            dark:bg-darkHover dark:text-white'>
+                    <div className='absolute right-6 top-6' onClick={closeSideMenu}>
+                        <Image src={isDark ? assets.close_white : assets.close_black} alt="close" width={100} height={100} className='w-6 cursor-pointer'></Image>
+                    </div>
+                    <li onClick={openSideMenu}>
+                        <a href="#top"> Home </a>
+                    </li>
+                    <li onClick={openSideMenu}>
+                        <a href="#about"> About us </a>
+                    </li>
+                    <li onClick={openSideMenu}>
+                        <a href="#services"> Services </a>
+                    </li>
+                    <li onClick={openSideMenu}>
+                        <a href="#mywork"> My Work </a>
+                    </li>
+                    <li onClick={openSideMenu}>
+                        <a href="#contact"> Contact us </a>
+                    </li>
+                </ul>
             </nav>
         </>
     )

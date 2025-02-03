@@ -2,7 +2,6 @@ import { assets } from '../../assets/assets'
 import Image from 'next/image'
 import React from 'react'
 import { motion } from "motion/react"
-import SVGComponent from './SVGComponent'
 
 const Header = () => {
     return (
@@ -10,15 +9,10 @@ const Header = () => {
             <motion.div
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
+                className='flex justify-center'
                 transition={{ duration: 0.8, type: 'spring', stiffness: 100 }}
-                className=" "
             >
-                {/* <Image
-                    src={assets.rahul_hospitality2}
-                    alt="logo"
-                    className="rounded-full w-full block"
-                /> */}
-                <SVGComponent width={400} height={400} />
+                <Image className='w-2/3' src={assets.rahul_hospitality}  width={300} height={300} alt='Rahul Hospitality'/>
             </motion.div>
             <motion.h1 
                 initial={{y:-30, opacity: 0}}
@@ -27,7 +21,6 @@ const Header = () => {
                 className='text-4xl sm:text-6xl lg:text-[66px] font-Ovo'>
                 Hospitality Services based in <span className='text-rose-500'>Navi Mumbai</span>
             </motion.h1>
-
             <motion.p
                 initial={{opacity: 0}}
                 whileInView={{opacity: 1}}
