@@ -33,18 +33,17 @@ const About = ({ isDark }) => {
                     transition={{ duration: 0.6}}
                     className='flex flex-1 justify-center'
                 >
-                    <Image src={assets.rahul_hospitality} alt="logo" className='w-[40%]'></Image>
+                    <Image src={assets.rahul_hospitality} alt="logo" className='w-[70%]'></Image>
                 </motion.div>
                 <motion.div
                     initial={{ opacity: 0}}
                     whileInView={{ opacity: 1}}
                     transition={{ duration: 0.6 , delay: 0.8 }}
                     className='flex-1'>
-                    <p className='mb-10 mx-5 max-w-2xl font-Ovo'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+                    <p className='mb-10 mx-5 max-w-2xl font-Ovo text-lg text-center lg:text-left'>
+                        As 10 Years in Hospitality Industry we are proud to introduce ourself as a leading Hospitality Management Company
+                        in India. We are a team of professionals who are dedicated to providing the best services to our clients.
+                        We have a team of experts who are well-versed in the field of hospitality management.
                     </p>
                     <motion.ul 
                         initial={{ opacity: 0}}
