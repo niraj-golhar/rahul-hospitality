@@ -29,18 +29,19 @@ const Navbar = ({ isDark, setIsDark }: { isDark: boolean, setIsDark: (isDark: bo
             <div className='fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden'>
                 <Image src={assets.header_bg_color} className='w-full blur-md' alt="bf"></Image>
             </div>
-            <nav className={`flex justify-between items-center w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 z-50  dark:bg-darkTheme dark:shadow-white/20
-                ${isScrollY ? 'bg-white bg-opacity-50  backdrop-blur-lg shadow-sm ' : ''}
-                ${isDark ? 'text-white' : 'text-black'}
+            <nav className={`flex justify-between items-center w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 z-50  
+                ${isScrollY ? 'bg-white bg-opacity-100 text-black' : ''}
+                }
             `}>
-                <a href="#top">
-                    <h1 className="text-black font-bold text-2xl cursor-pointer dark:text-white">
+                <a href="#top" >
+                    {/* <h1 className="text-black font-bold text-2xl cursor-pointer dark:text-white">
                         RAHUL  HOSPITALITY<span className="text-[#ff0000] text-4xl">.</span>
-                    </h1>
+                    </h1> */}
+                    <Image src={assets.rahul_hospitality_new} alt="logo" width={300} height={300} className={`w-[60%] cursor-pointer p-2    ${isScrollY ? "" : "bg-[#cfd3d6]"}`}></Image>
                 </a>
 
                 <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 
-            ${isScrollY ? "" : "bg-white shadow-sm bg-opacity-50 dark:border dark:border-white/50 dark:bg-transparent"}`}>
+            ${isScrollY ? "border border-black" : "bg-white shadow-sm bg-opacity-50 dark:border dark:border-white/50 dark:bg-transparent"}`}>
                     <li>
                         <a href="#top"> Home </a>
                     </li>
@@ -48,10 +49,10 @@ const Navbar = ({ isDark, setIsDark }: { isDark: boolean, setIsDark: (isDark: bo
                         <a href="#about"> About us </a>
                     </li>
                     <li>
-                        <a href="#services"> Services </a>
+                        <a href="#reviews"> Reviews </a>
                     </li>
                     <li>
-                        <a href="#mywork"> My Work </a>
+                        <a href="#ourwork"> Our Work </a>
                     </li>
                     <li>
                         <a href="#contact"> Contact us </a>
@@ -62,11 +63,10 @@ const Navbar = ({ isDark, setIsDark }: { isDark: boolean, setIsDark: (isDark: bo
                     <button>
                         <Image src={isDark ? assets.sun_icon : assets.moon_icon} onClick={() => setIsDark(!isDark)} alt="toggle-mode" width={100} height={100} className='w-6'></Image>
                     </button>
-                    <a href="#contact" className='hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 
-                dark:border-white/50 dark:text-white
-                '>
+                    <a href="#contact" className={`hidden lg:flex items-center gap-3 px-10 py-2.5 border border-black-500  rounded-full ml-4 
+                    ${isScrollY ? "text-black border border-black" : ""}
+                    `}>
                         Contact
-                        <Image src={isDark ? assets.arrow_icon_dark : assets.arrow_icon} alt="arrow" width={100} height={100} className='w-3' ></Image>
                     </a>
                     <button className='block lg:hidden md:hidden ml-4' onClick={openSideMenu}>
                         <Image src={isDark ? assets.menu_white : assets.menu_black} alt="menu" width={100} height={100} className='w-6'></Image>
@@ -86,10 +86,10 @@ const Navbar = ({ isDark, setIsDark }: { isDark: boolean, setIsDark: (isDark: bo
                         <a href="#about"> About us </a>
                     </li>
                     <li onClick={closeSideMenu}>
-                        <a href="#services"> Services </a>
+                        <a href="#reviews"> Reviews </a>
                     </li>
                     <li onClick={closeSideMenu}>
-                        <a href="#mywork"> My Work </a>
+                        <a href="#ourwork"> Our Work </a>
                     </li>
                     <li onClick={closeSideMenu}>
                         <a href="#contact"> Contact us </a>

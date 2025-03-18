@@ -33,7 +33,7 @@ const About = ({ isDark }) => {
                     transition={{ duration: 0.6}}
                     className='flex flex-1 justify-center'
                 >
-                    <Image src={assets.rahul_hospitality} alt="logo" className='w-[70%] lg:w-[40%]'></Image>
+                    <Image src={assets.rahul_hospitality_new} alt="logo" className='w-[70%] lg:w-[40%] bg-[#cfd3d6]'></Image>
                 </motion.div>
                 <motion.div
                     initial={{ opacity: 0}}

@@ -1,4 +1,3 @@
-import user_image from './user-image.png';
 import code_icon from './code-icon.png';
 import code_icon_dark from './code-icon-dark.png';
 import edu_icon from './edu-icon.png';
@@ -12,10 +11,8 @@ import git from './git.png';
 import mongodb from './mongodb.png';
 import right_arrow_white from './right-arrow-white.png';
 import logo from './logo.png';
-import logo_dark from './logo_dark.png';
 import mail_icon from './mail_icon.png';
 import mail_icon_dark from './mail_icon_dark.png';
-import profile_img from './profile-img.png';
 import download_icon from './download-icon.png';
 import hand_icon from './hand-icon.png';
 import header_bg_color from './header-bg-color.png';
@@ -41,9 +38,20 @@ import coming_soon from './coming-soon.jpg';
 import instafeel_night from './instafeel-night.jpg'; 
 import rahul_seaman_hostel_palm_beach from './rahul-seaman-hostel-palm-beach.avif';
 import wedding_hall_instafeel from './wedding-hall-instafeel.jpg';
+import rahul_hospitality_new from './rahul-hospitality-new.svg';
+import instafeel_interior from './instafeel-interior.jpg';
+import dish_1 from './dish-1.jpg';
+import dish_2 from './dish-2.jpg';
+import resto_1 from './resto-1.jpg';
+import resto_2 from './resto-2.jpg';
+import resto_3 from './resto-3.jpg';
+import resto_4 from './resto-4.jpg';
+import resto_5 from './resto-5.jpg';
+import resto_6 from './resto-6.jpg';
+import resto_7 from './resto-7.jpg';
+import resto_8 from './resto-8.jpg'; 
 
 export const assets = {
-    user_image,
     code_icon,
     code_icon_dark,
     edu_icon,
@@ -57,10 +65,8 @@ export const assets = {
     mongodb,
     right_arrow_white,
     logo,
-    logo_dark,
     mail_icon,
     mail_icon_dark,
-    profile_img,
     download_icon,
     hand_icon,
     header_bg_color,
@@ -86,6 +92,18 @@ export const assets = {
     instafeel_night,
     rahul_seaman_hostel_palm_beach,
     wedding_hall_instafeel,
+    rahul_hospitality_new,
+    instafeel_interior,
+    dish_1,
+    dish_2,
+    resto_1,
+    resto_2,
+    resto_3,
+    resto_4,
+    resto_5,
+    resto_6,
+    resto_7,
+    resto_8
 };
 
 export const workData = [
@@ -110,6 +128,30 @@ export const workData = [
         bgImage: '/coming-soon.jpg',
     },
 ]
+
+export const BG_SCREEN = {
+    bgscroll : [
+        '/resto-1.jpg',
+        '/resto-2.jpg',
+        '/resto-3.jpg',
+        '/resto-4.jpg',
+        '/resto-5.jpg',
+        '/resto-6.jpg',
+        '/resto-7.jpg',
+        '/resto-8.jpg',
+    ],
+    roomScroll : [
+        '/room-1.jpg',
+        '/room-2.jpg',
+        '/room-3.jpg',
+        '/room-4.jpg',
+        '/room-5.jpg',
+        '/room-6.jpg',
+        '/room-7.jpg',
+        '/room-8.jpg',
+    ]
+}
+
 
 export const serviceData = [
     { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },

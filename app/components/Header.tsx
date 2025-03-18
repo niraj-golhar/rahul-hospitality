@@ -12,7 +12,7 @@ const Header = () => {
                 className='flex justify-center'
                 transition={{ duration: 0.8, type: 'spring', stiffness: 100 }}
             >
-                <Image className='w-2/3' src={assets.rahul_hospitality}  width={300} height={300} alt='Rahul Hospitality'/>
+                <Image className='w-full bg-[#cfd3d6]' src={assets.rahul_hospitality_new}  width={300} height={300} alt='Rahul Hospitality'/>
             </motion.div>
             <motion.h1 
                 initial={{y:-30, opacity: 0}}

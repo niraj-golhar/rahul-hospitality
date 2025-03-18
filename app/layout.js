@@ -11,7 +11,7 @@ const ovo = Ovo({
 
 export const metadata = {
   title: "Rahul Hospitality",
-  description: "Rahul Hospitality - Hotels, Resorts, Hostels and Restaurants",
+  description: "Rahul Hospitality - Hotels, Resorts, Restaurants and Hostels",
 };
 
 export default function RootLayout({ children }) {

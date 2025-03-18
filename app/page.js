@@ -1,12 +1,13 @@
 "use client"
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
-import About from "./components/About";
-import Services from "./components/Services";
 import Work from "./components/Work";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { useEffect, useState } from "react";
+import { Hero } from "./components/Hero";
+import AutoSlider from "./components/Slider";
+import TestimonialCarousel from "./components/TestimonialCarousel";
 
 export default function Home() {
   const [isDark, setIsDark] = useState(false);
@@ -31,15 +32,21 @@ export default function Home() {
   }, [isDark]);
 
   return (
-    <div>
+    <main className="min-h-screen">
       <Navbar isDark={isDark} setIsDark={setIsDark}/>
-      <Header isDark={isDark} />
-      <About isDark={isDark} />
+      <Hero isDark={isDark} />
       <Work isDark={isDark} />
-      <Services isDark={isDark} />
+      {/* <Header isDark={isDark} /> */}
+      {/* <ComparisonSlider isDark={isDark} /> */}
+      {/* <Imagination isDark={isDark} /> */}
+      <TestimonialCarousel isDark={isDark} />
+      <AutoSlider isDark={isDark} />
+
+      {/* <About isDark={isDark} /> */}
+      {/* <Services isDark={isDark} /> */}
       <Contact isDark={isDark} />
       <Footer isDark={isDark} />
-    </div>
+    </main>
   );
 }
 
