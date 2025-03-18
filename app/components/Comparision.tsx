@@ -93,7 +93,7 @@ export function ComparisonSlider({ imageUrl, videoUrl }: ComparisonSliderProps) 
         }}
         onPointerMove={(e) => {
           if (e.buttons === 1) {
-            handleDrag(e)
+            // handleDrag(e)  // Uncomment this line to enable drag
           }
         }}
       >
