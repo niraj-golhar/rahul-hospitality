@@ -4,34 +4,34 @@ import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 
 const testimonials = [
   {
-    text: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-    img: "https://codingyaar.com/wp-content/uploads/square-headshot-1.png",
-    name: "Jane Doe",
-    position: "CEO, Example Company"
+    text: " great experience with the food at Instafeel Hotel. The menu offered a good variety of dishes, all freshly prepared and flavorful. The quality and presentation were impressive",
+    img: "/user.png",
+    name: "Dhwani Shah",
+    position: "Instafeel Hotel Guest"
   },
   {
-    text: "The experience was fantastic, and the service was flawless.",
-    img: "https://codingyaar.com/wp-content/uploads/square-headshot-2.png",
-    name: "June Doe",
-    position: "CTO, Example Company"
-  },
-  {
-    text: "Highly recommend this service. Their team was outstanding.",
-    img: "https://codingyaar.com/wp-content/uploads/bootstrap-profile-card-image.jpg",
-    name: "John Smith",
-    position: "Manager, Tech Inc."
+    text: "Highly recommend this service. Their team was outstanding. Our Reception went flawlessly and the food was delicious. We will definitely be using their services again.",
+    img: "/user.png",
+    name: "Priya Patel",
+    position: "Banquet Hall Guest."
   },
   {
     text: "Professional and friendly support, exceeded my expectations!",
-    img: "https://codingyaar.com/wp-content/uploads/square-headshot-1.png",
-    name: "Alice Brown",
-    position: "HR, Startup Hub"
+    img: "/user.png",
+    name: "Abhishek Patil",
+    position: "Instafeel Hotel Guest"
   },
   {
-    text: "Great product quality and fast delivery. Five stars!",
-    img: "https://codingyaar.com/wp-content/uploads/square-headshot-2.png",
-    name: "Mark Wilson",
-    position: "Founder, XYZ Ltd."
+    text: "I stayed at Rahul Hostel for 1.5 years during my first job. The hostel offered a comfortable and safe environment with clean rooms, reliable Wi-Fi, and helpful staff. Its convenient location near public transport made commuting easy. The food was decent but could have been more varied. Overall, a good budget-friendly option for working professionals.",
+    img: "/user.png",
+    name: "Kartik Naik",
+    position: "Rahul Hostel Guest"
+  },
+  {
+    text: "Great food and Luxury Stays at Instafeel. Five stars!",
+    img: "/user.png",
+    name: "Riya Dhanwani",
+    position: "Instafeel Hotel Guest."
   }
 ];
 
@@ -77,7 +77,7 @@ const TestimonialCarousel = () => {
                   className="w-16 h-16 rounded-full object-cover"
                 />
                 <div>
-                  <h3 className="text-lg font-semibold">{item.name}</h3>
+                  <h3 className="text-lg font-semibold text-black">{item.name}</h3>
                   <p className="text-gray-500">{item.position}</p>
                 </div>
               </div>

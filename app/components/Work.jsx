@@ -25,10 +25,7 @@ const Work = ({ isDark }) => {
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.7 }}
                 className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+                We have worked on some awesome projects that are worth sharing with you. Check out our latest projects below.
             </motion.p>
 
             <motion.div

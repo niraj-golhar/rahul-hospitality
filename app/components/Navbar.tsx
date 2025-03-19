@@ -45,9 +45,9 @@ const Navbar = ({ isDark, setIsDark }: { isDark: boolean, setIsDark: (isDark: bo
                     <li>
                         <a href="#top"> Home </a>
                     </li>
-                    <li>
+                    {/* <li>
                         <a href="#about"> About us </a>
-                    </li>
+                    </li> */}
                     <li>
                         <a href="#reviews"> Reviews </a>
                     </li>
@@ -61,7 +61,7 @@ const Navbar = ({ isDark, setIsDark }: { isDark: boolean, setIsDark: (isDark: bo
 
                 <div className='flex items-center gap-4'>
                     <button>
-                        <Image src={isDark ? assets.sun_icon : assets.moon_icon} onClick={() => setIsDark(!isDark)} alt="toggle-mode" width={100} height={100} className='w-6'></Image>
+                        <Image src={(isDark) ? assets.sun_icon : assets.moon_icon} onClick={() => setIsDark(!isDark)} alt="toggle-mode" width={100} height={100} className='w-6'></Image>
                     </button>
                     <a href="#contact" className={`hidden lg:flex items-center gap-3 px-10 py-2.5 border border-black-500  rounded-full ml-4 
                     ${isScrollY ? "text-black border border-black" : ""}
@@ -82,9 +82,9 @@ const Navbar = ({ isDark, setIsDark }: { isDark: boolean, setIsDark: (isDark: bo
                     <li onClick={closeSideMenu}>
                         <a href="#top"> Home </a>
                     </li>
-                    <li onClick={closeSideMenu}>
+                    {/* <li onClick={closeSideMenu}>
                         <a href="#about"> About us </a>
-                    </li>
+                    </li> */}
                     <li onClick={closeSideMenu}>
                         <a href="#reviews"> Reviews </a>
                     </li>
